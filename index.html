@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Midnight Sumo - OBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Shippori+Mincho+B1:wght@800&family=Monoton&display=swap"
+    />
+    <link rel="stylesheet" href="css/overlay.css" />
+  </head>
+  <body>
+    <div class="stage" id="stage">
+      <div class="layer" id="layerOverlay">
+        <div class="frame"></div>
+        <div class="ov">
+          <div class="header">
+            <div class="banner">Midnight Sumo</div>
+            <div class="meta">
+              <div class="basho">
+                <div class="neon">Aki Basho 2026</div>
+                <div class="dayrow">
+                  <div class="live" id="liveBadge">LIVE</div>
+                  <div class="neon">Day 14</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <div class="left">
+              <section class="panel bout" id="boutPanel">
+                <div class="ptitle">
+                  <h2>Now fighting</h2>
+                  <span id="boutNo"></span>
+                </div>
+                <div class="fighters">
+                  <div class="f east" id="fEast"></div>
+                  <div class="vs">vs</div>
+                  <div class="f west" id="fWest"></div>
+                </div>
+              </section>
+              <section class="panel stats">
+                <div class="ptitle">
+                  <h2>Tournament record</h2>
+                  <span>○ win · ● loss</span>
+                </div>
+                <div id="records"></div>
+                <div class="result" id="result"></div>
+              </section>
+            </div>
+            <div class="right">
+              <div class="hole"></div>
+              <div class="caption">
+                <b>Now playing</b><span>[Video title]</span><span class="ch">- [Channel name]</span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <section class="panel next">
+              <div class="ptitle">
+                <h2>Up next</h2>
+                <span id="nextMeta"></span>
+              </div>
+              <div id="cards"></div>
+            </section>
+            <section class="panel announce" id="announcePanel" aria-live="polite">
+              <div class="ptitle"><h2>Announcements</h2></div>
+              <div class="atext" id="announce">Username subscribed for 6 months!</div>
+            </section>
+            <section class="panel leaders">
+              <div class="ptitle">
+                <h2>Leaders</h2>
+                <span id="daysLeft">2 days left</span>
+              </div>
+              <div id="leaders"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/bouts.js"></script>
+  </body>
+</html>
