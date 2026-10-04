@@ -30,4 +30,3 @@ npm install          # one time, installs Prettier
 npm run format       # format everything in place
 npm run format:check # check formatting without changing files
 ```
-
